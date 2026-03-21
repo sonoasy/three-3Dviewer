@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAGIC SHOP VIEWER</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div id="hierarchy-panel">
+         <div class="panel-title">HIERARCHY</div>
+         <div id="hierarchy-tree"></div>
+         <hr>
+         <div class="panel-title">INSPECTOR</div>
+         <div id="inspector-panel"></div>
+      </div>
+
+      <div id="viewport"></div>
+
+      <div id="memo-panel">
+         <div id="toolbar">
+         <button id="xray-btn">X-RAY</button>
+         <button id="wire-btn">WIREFRAME</button>
+         <button id="upload-btn">LOAD</button>
+         <input type="file" id="file-input" accept=".glb" style="display:none">
+         </div>
+         <div id="selected-name">선택된 오브젝트 없음</div>
+         <textarea id="memo-input" placeholder="메모를 입력하세요..."></textarea>
+     </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
